@@ -56,3 +56,35 @@ console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(typeof scoreValue);
 console.log(typeof myFunction);
+
+
+
+
+//**************Memory******************/
+
+// STACK AND HEAP
+
+
+// primitive  = stack        non primitve = heap 
+
+// stack = copy        heap = reference orginal value 
+
+let myYoutubeName= "MohitSwamicom"
+let anothername = myYoutubeName
+
+anothername="LaptopBhai"
+console.log(myYoutubeName)
+console.log(anothername)
+
+
+// heap  only one refernce 
+let userOne = {
+    email : "user@google.com",
+    upi: "user@sbi"
+}
+let userTwo = userOne
+
+userTwo.email = "NewGmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
